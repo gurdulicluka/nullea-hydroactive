@@ -1,0 +1,33 @@
+.thumb__float {
+  position: fixed;
+  z-index: 100;
+  border: none;
+  width: 10vw;
+  height: 10vw;
+  min-width: 60px;
+  min-height: 60px;
+  top: 2%;
+  right: 5%;
+  background-color: var(--green);
+  padding: 5px;
+  border-radius: 10000em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  background-color: var(--cream);
+  height: 10%;
+  width: 45%;
+  border-radius: 100px;
+}
+
+.bar2 {
+  width: 35%;
+  margin-left: -10%;
+}

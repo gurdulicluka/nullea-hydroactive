@@ -1,0 +1,87 @@
+.form__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  gap: 20px;
+  width: 100%;
+  max-width: 470px;
+}
+
+.form__container input,
+.form__container textarea {
+  border-radius: 7px;
+  outline: none;
+  padding-inline: 10px;
+  position: relative;
+  width: 100%;
+  font-size: 1rem;
+  transition: all 300ms ease;
+}
+
+.email__container,
+.msg__container {
+  width: 100%;
+  position: relative;
+}
+
+.email__input {
+  height: 44px;
+}
+
+.msg__input {
+  height: 105px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+label {
+  position: absolute;
+  top: 13px;
+  left: 15px;
+  font-size: 0.8rem;
+  transition: all 300ms ease;
+  pointer-events: none;
+}
+
+label > span {
+  padding-inline: 5px;
+  border-radius: 100em;
+  font-weight: 500;
+  line-height: 0;
+}
+
+/* FOCUS FLOAT EFFECT */
+.email__input:focus + label,
+.email__input:not(:placeholder-shown) + label,
+.msg__input:focus + label,
+.msg__input:not(:placeholder-shown) + label {
+  top: -9px;
+}
+
+/* FORM PRIMARY */
+input.form__primary,
+textarea.form__primary {
+  border: 1px solid var(--brown);
+}
+.form__primary {
+  background-color: var(--cream);
+  color: var(--brown);
+}
+.form__primary:focus {
+  box-shadow: var(--brown) 0px 0px 0px 1px;
+}
+
+/* FORM SECONDARY */
+.form__secondary {
+  background-color: #292626;
+  color: var(--cream);
+}
+
+input.form__secondary,
+textarea.form__secondary {
+  border: 1px solid var(--cream);
+}
+.form__secondary:focus {
+  box-shadow: var(--cream) 0px 0px 0px 1px;
+}

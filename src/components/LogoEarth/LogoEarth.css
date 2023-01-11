@@ -1,0 +1,38 @@
+.nullea__logo--wrapper {
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 10000em;
+}
+
+.nulleaCircle {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: 1000em;
+  z-index: 4;
+}
+
+.earth {
+  position: absolute;
+  width: 100%;
+  border-radius: 100em;
+  top: 0px;
+  z-index: 3;
+}
+
+.earthNormal {
+  position: absolute;
+  display: block;
+  top: 0px;
+  width: 100%;
+  border-radius: 100em;
+  z-index: 2;
+}
+
+@media (max-width: 570px) {
+  .nullea__logo--wrapper {
+    width: 75%;
+  }
+}

@@ -1,0 +1,32 @@
+.btn {
+  border: none;
+  border-radius: 7px;
+  color: var(--cream);
+  padding: 8px 36px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.btn__primary {
+  background-color: var(--green);
+  transition: all 200ms ease-in-out;
+  border: 1px solid transparent;
+}
+
+.btn__secondary {
+  background-color: transparent;
+  border: 1px solid var(--cream);
+  transition: all 200ms ease-in-out;
+}
+
+@media (hover: hover) {
+  .btn__primary:hover {
+    border-color: var(--green);
+    background-color: var(--cream);
+    color: var(--green);
+  }
+  .btn__secondary:hover {
+    background-color: var(--cream);
+    color: #292626;
+  }
+}

@@ -1,0 +1,62 @@
+.about {
+  margin-bottom: 6rem;
+}
+
+.about__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3.6rem;
+}
+
+.nullea__logo {
+  flex: 1.6;
+}
+
+.about__content {
+  flex: 1;
+}
+
+.about__content :nth-child(1) {
+  margin-bottom: 3rem;
+}
+
+.about__content--paragraph {
+  display: flex;
+  align-items: baseline;
+}
+
+.about__content--marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  transform: translateY(-3px);
+  width: 18px;
+  height: 18px;
+  border: 1px solid var(--brown);
+  color: var(--brown);
+  border-radius: 10000em;
+  font-weight: 500;
+  font-family: "Yeseva One", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+}
+
+.about__content--paragraph > p {
+  width: 95%;
+}
+
+@media (max-width: 985px) {
+  .nullea__logo {
+    flex: 1.3;
+  }
+}
+
+@media (max-width: 845px) {
+  .about__wrapper {
+    flex-direction: column-reverse;
+    gap: 4rem;
+    margin-top: 1.6rem;
+  }
+}

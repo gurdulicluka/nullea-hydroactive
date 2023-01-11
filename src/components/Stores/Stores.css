@@ -1,0 +1,33 @@
+.stores {
+  margin-top: 140px;
+}
+
+.stores__location--container {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 60% 37%;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 3%;
+}
+
+@media (max-width: 845px) {
+  .stores {
+    margin-top: 110px;
+  }
+  .stores__location--container {
+    grid-template-rows: 60% 36%;
+    grid-row-gap: 35px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 665px) {
+  .stores {
+    margin-top: 80px;
+  }
+  .stores__location--container {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 24px;
+  }
+}

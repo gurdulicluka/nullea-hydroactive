@@ -1,0 +1,80 @@
+.modal__backdrop {
+  position: fixed;
+  z-index: 100;
+  background-color: #000000b2;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.modal__container {
+  position: absolute;
+  z-index: 20000;
+  top: 20%;
+  width: clamp(280px, 70vw, 600px);
+  padding: 70px 5%;
+  background-color: var(--cream);
+  border-radius: 7px;
+  opacity: 85%;
+  text-align: center;
+  animation: 340ms ease-in-out 1 forwards fadeInUp;
+}
+
+.modal__msg {
+  color: var(--brown);
+  font-size: clamp(1.3rem, 4.2vw, 1.8rem);
+}
+
+.modal__btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border: none;
+  background-color: var(--green);
+  width: 26px;
+  height: 26px;
+  border-radius: 10000em;
+  color: var(--cream);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.xline,
+.xlinetwo {
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 15px;
+  background-color: var(--cream);
+  border-radius: 7px;
+}
+
+.xlinetwo {
+  transform: rotate(45deg);
+}
+
+.xline {
+  transform: rotate(-45deg);
+}
+
+.sadface {
+  margin-top: 15px;
+  color: var(--brown);
+  font-size: clamp(1.4rem, 4.2vw, 2rem);
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

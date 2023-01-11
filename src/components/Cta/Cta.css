@@ -1,0 +1,40 @@
+.cta {
+  text-align: center;
+  margin: 100px auto 40px auto;
+  width: 100%;
+  max-width: 470px;
+}
+
+.tos__message {
+  color: var(--brown);
+  font-size: clamp(0.6rem, 1.5vw, 0.7375rem);
+  margin-top: 1rem;
+  width: 90%;
+  margin-inline: auto;
+}
+
+.tos__link {
+  color: var(--brown);
+  text-decoration: underline;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.socials img {
+  width: 28px;
+  height: auto;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+@media (hover: hover) {
+  .socials img:hover {
+    transform: scale(1.2);
+  }
+}

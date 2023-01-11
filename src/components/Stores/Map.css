@@ -1,0 +1,36 @@
+.map__iframe {
+    display: block;
+    min-height: 450px;
+}
+
+.stores__map {
+    border: 1px solid var(--brown);
+    border-radius: 7px;
+    overflow: hidden;
+    grid-column: 1;
+    grid-row: 1/3;
+    min-height: 450px;
+    position: relative;
+}
+
+@media (max-width:845px) {
+    .stores__map {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        min-height: 45vw;
+    }
+
+    .map__iframe {
+        min-height: 45vw;
+    }
+}
+
+@media (max-width:665px) {
+    .stores__map {
+        min-height: 80vw;
+    }
+
+    .map__iframe {
+        min-height: 80vw;
+    }
+}

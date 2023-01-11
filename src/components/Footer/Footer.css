@@ -1,0 +1,78 @@
+.page__footer {
+  background-color: #292626;
+  padding: 85px 0;
+  color: var(--cream);
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+}
+
+.footer__form {
+  flex: 1;
+}
+
+.footer__about {
+  flex: 1.6;
+  display: flex;
+  justify-content: flex-end;
+  gap: 14%;
+}
+
+.form__text {
+  margin-bottom: 25px;
+}
+
+.form__heading {
+  font-family: "Yeseva One", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: inherit;
+  font-size: clamp(1.7rem, 3vw, 2.7rem);
+  font-weight: 500;
+  line-height: 0.9;
+}
+
+@media (max-width: 845px) {
+  .page__footer {
+    padding: 70px 0px;
+  }
+  .footer__container {
+    flex-direction: column;
+    gap: 65px;
+  }
+
+  .footer__form {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 470px;
+  }
+
+  .footer__about {
+    justify-content: space-between;
+    width: 100%;
+    max-width: 470px;
+    gap: 0%;
+  }
+
+  .form__text {
+    text-align: center;
+    margin-bottom: 45px;
+  }
+
+  .form__text h2 {
+    font-size: 2em;
+    margin-bottom: 12px;
+  }
+
+  .form__text p {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer__about {
+    flex-direction: column;
+    gap: 40px;
+  }
+}

@@ -1,0 +1,112 @@
+header {
+  background-color: var(--green);
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 4.5rem;
+}
+
+.navbar__logo a {
+  font-family: "Yeseva One", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.navbar__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.navbar__link {
+  color: var(--cream);
+  font-weight: 500;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.navbar__route {
+  transition: all 200ms ease-in-out;
+}
+
+.navbar__cart {
+  cursor: pointer;
+}
+
+.cart__button {
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+  cursor: pointer;
+  height: auto;
+}
+
+.cart__icon {
+  width: 20px;
+  height: auto;
+}
+
+.products__btn {
+  border: 1px solid var(--cream);
+  padding: 4px 10px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+@media (hover: hover) {
+  .navbar__route:hover {
+    transform: scale(1.1);
+  }
+
+  .products__btn:hover {
+    background-color: var(--cream);
+  }
+
+  .products__btn:hover > .navbar__link {
+    color: var(--green);
+  }
+}
+
+.hide {
+  animation: 600ms ease forwards 1 slideUp;
+}
+
+.show {
+  animation: 360ms ease forwards 1 slideDown;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-47px);
+  }
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0p);
+  }
+}

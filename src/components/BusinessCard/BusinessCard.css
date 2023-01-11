@@ -1,0 +1,32 @@
+.businessCard {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+  /* ko text__small */
+}
+
+.business__socials {
+  margin-top: 10px;
+}
+
+.business__socials img:first-child {
+  margin-right: 5px;
+}
+
+.business__socials img {
+  width: 34px;
+  cursor: pointer;
+}
+
+@media (max-width: 845px) {
+  .businessCard {
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .businessCard {
+    font-size: 1.1em;
+  }
+}

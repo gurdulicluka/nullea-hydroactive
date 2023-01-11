@@ -1,0 +1,49 @@
+.statement {
+  margin-top: 190px;
+}
+
+.statement__content {
+  display: flex;
+  align-items: center;
+  margin: 1.2rem 0px;
+}
+
+.statement__content > p {
+  flex: 2;
+}
+
+.nullea__bottle {
+  flex: 0.9;
+  margin-right: 2%;
+}
+
+.nullea__bottle > img {
+  width: 100%;
+  height: auto;
+  min-width: 250px;
+  aspect-ratio: attr(width) / attr(height);
+  animation: fadeIn;
+  animation-duration: 1200ms;
+}
+
+/* //////////////// */
+
+@media (max-width: 768px) {
+  .statement__content {
+    flex-direction: column;
+  }
+
+  .statement {
+    margin-top: 130px;
+  }
+
+  .nullea__bottle {
+    margin-top: 2.5rem;
+    margin-right: 0px;
+    text-align: center;
+  }
+
+  .nullea__bottle > img {
+    width: 78%;
+  }
+}

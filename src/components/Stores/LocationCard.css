@@ -1,0 +1,107 @@
+.location__card {
+    border: 1px solid var(--brown);
+    border-radius: 7px;
+    width: 100%;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: var(--brown);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.location__info {
+    margin-bottom: 10px;
+    flex: 1;
+}
+
+.location__workHours {
+    text-align: end;
+}
+
+.location__image {
+    overflow: hidden;
+    flex: 1.5;
+}
+
+.location__image img {
+    border-radius: 7px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+.select {
+    transform-origin: bottom left;
+    animation-duration: 320ms;
+    animation-iteration-count: 1;
+    animation-name: scaleBouncy;
+    animation-timing-function: ease-in-out;
+}
+
+.deselect {
+    filter: grayscale(1);
+    transition: all 200ms ease-in-out;
+    transform: scale(0.8);
+    transform-origin: bottom left;
+}
+
+.selectFirst {
+    transform-origin: top left;
+    animation-duration: 320ms;
+    animation-iteration-count: 1;
+    animation-name: scaleBouncy;
+    animation-timing-function: ease-in-out;
+}
+
+.deselectFirst {
+    filter: grayscale(1);
+    transition: all 200ms ease-in-out;
+    transform: scale(0.8);
+    transform-origin: top left;
+}
+
+@keyframes scaleBouncy {
+        0%   { transform: scale(0.8)}
+        60%  { transform: scale(1.01)}
+        100% { transform: scale(1)}
+    }
+
+
+@media (max-width:845px) {
+.select {
+    animation: none;
+    box-shadow: var(--brown) 0px 0px 0px 3px;
+    border-color: transparent;
+    transition: all 70ms ease-in-out;
+}
+
+.deselect {
+    filter: grayscale(1);
+    transition: all 140ms ease-in-out;
+    transform: none;
+}
+
+.selectFirst {
+    animation: none;
+    box-shadow: var(--brown) 0px 0px 0px 3px;
+    border-color: transparent;
+    transition: all 70ms ease-in-out;
+}
+
+.deselectFirst {
+    filter: grayscale(1);
+    transition: all 140ms ease-in-out;
+    transform: none;
+}
+}
+
+@media (max-width:665px) {
+    .location__card {
+        padding: 10px 20px;
+        text-align: center;
+    }
+}
