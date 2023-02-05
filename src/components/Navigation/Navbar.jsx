@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import "./Navbar.css";
 import { cart } from "../../assets";
 import ProgressBar from "../ProgressBar/ProgressBar";
-import { debounce } from "../../util/helpers";
 import ErrorModal from "../ErrorModal/ErrorModal";
 import { useModal } from "../../util/hooks";
 
@@ -11,25 +10,19 @@ const Navbar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
 
-  const handleScroll = debounce(() => {
+  const handleScroll = () => {
     const currentScrollPos = window.pageYOffset;
 
-    setVisible(
-      (prevScrollPos > currentScrollPos &&
-        prevScrollPos - currentScrollPos > 50) ||
-        currentScrollPos < 10
-    );
+    setVisible(prevScrollPos > currentScrollPos);
 
     setPrevScrollPos(currentScrollPos);
-  }, 100);
-  // function for setting navbar visibility state with buffer
+  };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, [prevScrollPos, visible, handleScroll]);
-  // event listener for scroll animation
 
   useEffect(() => {
     if (isOpen) {
