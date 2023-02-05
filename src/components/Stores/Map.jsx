@@ -5,6 +5,7 @@ const Map = ({ currentMap }) => {
   return (
     <div className="stores__map">
       <iframe
+        title="map"
         className="map__iframe"
         src={currentMap}
         width="100%"

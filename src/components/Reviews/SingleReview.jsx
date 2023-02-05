@@ -43,7 +43,7 @@ const SingleReview = ({ name, title, image, content }) => {
         </div>
       </div>
       <div className="review__image">
-        <img src={image} alt="review image" />
+        <img src={image} alt="review" />
       </div>
     </motion.div>
   );

@@ -9,7 +9,7 @@ const BusinessCard = ({ name, role, email, linkedin }) => {
       <span>{role}</span>
       <span>{email}</span>
       <div className="business__socials">
-        <a href="">
+        <a href="/">
           <img src={instagramCream} alt="instagram" />
         </a>
         <a href={linkedin}>

@@ -10,9 +10,7 @@ const LocationCard = ({
   onClick,
   isSelected,
 }) => {
-  const [classAnimation, setClassAnimation] = useState(
-    address.includes("Ilica")
-  );
+  const [classAnimation] = useState(address.includes("Ilica"));
 
   return (
     <div
@@ -33,7 +31,7 @@ const LocationCard = ({
         <p className="location__workHours">{workHours}</p>
       </div>
       <div className="location__image">
-        <img src={image} alt="location image" />
+        <img src={image} alt="location" />
       </div>
     </div>
   );
